@@ -5,17 +5,20 @@
 <html>
     <head>
 
+        <title>luisschwab.dev</title>
+
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
+        
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="/img/icon.svg">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+        <script src="script.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <title>luisschwab.dev</title>
 
     </head>
 
@@ -28,41 +31,43 @@
                     </div>
                 </div>
                 <div class="right">
-                    <ul class="right">
-                        <li><a href="/blog">BLOG</a></li>
-                        <li><a href="/portifolio">PORTIFOLIO</a></li>
-                        <li><a href='#reachme'>REACH ME</a></li>
-                    </ul>
+                    <div id="header-right-container">
+                        <ul>
+                            <li><a href="https://luisschwab.dev/blog/">BLOG</a></li>
+                            <li><a href="/portifolio">PROOF OF WORK</a></li>
+                            <li><a href='#reachme'>REACH ME</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="section">
                 <div class="section-title">ABOUT</div>
                 <div class="section-content">
-                    I'm a Computer Engineering student at University of Brasília (UnB). 
+                    I am a Computer Engineering student at University of Brasília (UnB). 
                     My academic interests include cryptography, distributed systems, cybersecurity, 
                     computer networks and privacy on the cyberspace, as well as history, economics and political theory.
-                    <br>
-                    Outside of the tech sphere, I enjoy training and competing in jiujitsu and reading.
-                    <br>
-                    You can download my curriculum <a href="cv.pdf">here</a>.
+                    <br><br>
+                    Outside of the tech sphere, I enjoy training jiujitsu, mountain biking and reading.
                 </div>
+            </div>
             
             <div class="section">
                 <div class="section-title">SKILLS</div>
                 <div class="section-content">
-                    My webdev toolset includes the bread and butter ( 'HTML' , 'CSS' , 'JavaScript' ) tuple, as well as the ReactJS framework.
-                    <br>
-                    General purpose skills include Git, Bash, Python, C, server management, VM deployment and network
-                    management.
+                    My webdev toolset is comprised of the ( 'HTML' , 'CSS' , 'JavaScript' ) tuple. Currently learning
+                    TypeScript, React, Node.js and MySQL.
+                    <br><br>
+                    Other skills include Python, C, UNIX, self-hosting, networking and design.
                 </div>
             </div>
 
             <div class="section">
                 <div class="section-title">PROOF OF WORK</div>
                 <div class="section-content">
-                    Here's a sample the projects I did in the past. For my whole portifolio, click <a href="portifolio">here</a>.
-                    <!--PROJECTS 2xN GRID-->
+                    Below are some of my projects. To see my whole portifolio, click <a href="portifolio">here</a>. 
+                    <div class="proj-grid">
+                    </div>
                 </div>
             </div>
 
@@ -84,28 +89,22 @@
             </div>
 
             <div class="section">
-                <div class="section-title">TWITTER</div>
-                <div class="section-content">Check out my Twitter profile <a href="https://twitter.com/luisschwab7/" target="_blank">here</a>.</div>
-            </div>
-
-            <div class="section">
-                <div class="section-title"><div id="reachme">REACH ME</div></div>
+                <div class="section-title" id="reachme">REACH ME</div>
                 <div class="section-content">
-                You can reach me via email at <a href="mailto:luisschwabrodrigues@gmail.com" target="_blank">
-                luisschwabrodrigues@gmail.com</a>, or at <a href="mailto:luis@luisschwab.dev" target="_blank">
-                luis@luisschwab.dev</a>.
-                <br>
-                If you wish to send me a private message, encrypt it with PGP.
-                <br>
-                <br>
-                My PGP fingerprint is:
-                <br>
-                <br>
-                <div style="font-family:'Bebas Neue'; font-size: 32px;">
-                13C8 A19B F3BB 4311 64A9 49C8 3B93 3EB8 F45F F626
-                </div>
-                <br>
-                My pubkey is available <a href="https://gist.github.com/luisschwab/992486ef6e5ed308896f338a5dc7a392" target="_blank">here</a>.
+                    You can reach me via email at <a href="mailto:luisschwabrodrigues@gmail.com" target="_blank">
+                    luisschwabrodrigues@gmail.com</a>
+                    <br>
+                    If you wish to send me a private message, encrypt it with PGP.
+                    <br>
+                    <br>
+                    My PGP fingerprint is:
+                    <br>
+                    <br>
+                    <div style="font-family:'Bebas Neue'; font-size: 32px;">
+                    13C8 A19B F3BB 4311 64A9 49C8 3B93 3EB8 F45F F626
+                    </div>
+                    <br>
+                    GET /pubkey.asc <a href="/pubkey.asc" target="_blank">here</a>, or view it in <a href="https://gist.github.com/luisschwab/992486ef6e5ed308896f338a5dc7a392" target="_blank">github</a>.
                 </div>
             </div>
 
@@ -114,6 +113,7 @@
                 <br>
                 all rights reserved
             </div>
+
         </div>
     </body>
 </html>

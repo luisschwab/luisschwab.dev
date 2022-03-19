@@ -1,13 +1,19 @@
 /* css for luisschwab.dev */
 
+:root {
+  --background: #000;
+  --purple: #6b00f7;
+  --white: #fff;
+  --orange: #fd810b;
+}
+
 html {
   overflow-y:auto;
 }
 
 body {
-  color:white;
-  background:black;
-  font-family:'Bebas Neue', monospace;
+  color: var(--white);
+  background: var(--background);
 }
 
 .wrapper {
@@ -15,11 +21,23 @@ body {
   margin-right: 20%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
   .wrapper {
       width: 100%;
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  .header .logo {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 541px)
+              and (max-width: 1500px) {
+  .wrapper {
+    margin-left: 8%;
+    margin-right: 8%;
   }
 }
 
@@ -27,20 +45,60 @@ body {
   display:flex;
   justify-content:space-between;
   flex-direction:row;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
+  font-family: 'Bebas Neue', monospace;
 }
 
+.header a:hover {
+  color: var(--orange);
+}
+
+.header ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.header button {
+  background-color: var(--background);
+  border: 0px;
+  padding: 0px;
+}
+
+#header-right-container {
+  z-index: 10;
+}
+
+.ham-button {
+  
+}
+
+.mobile-menu {
+  font-size: 50px;
+  font-weight: bolder;
+  color: var(--purple);
+  text-align: right;
+}
+
+ .mobile-menu-option {
+   display: flex;
+   flex-direction: row;
+ }
+
 .logo {
-  color: #6b00f7;
-  font-size: 55px;
+  color: var(--purple);
+  font-size: 70px;
   font-weight: bolder;
 }
 
 .left, .right {
-  display:flex;
-  align-items:center;
-  gap:25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .footer {
@@ -60,36 +118,33 @@ body {
 }
 
 .section-title {
-  color: #6b00f7;
+  font-family: 'Bebas Neue', monospace;
+  color: var(--purple);
   font-size: 50px;
 }
 
 .section-content {
   font-family: 'IBM Plex Sans';
   font-size: 23px;
+  padding-right: 5px;
 }
 
-a:link, a:visited{
-  color: #6b00f7;
+a, a:link, a:visited{
+  color: var(--purple);
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:hover{
-  color:#fd810b;
-  background-color: transparent;
-  text-decoration: underline;
+  color: var(--orange);
 }
 
 ul {
-  list-style-type: none;
-  display: flex;
-  font-size: 27px;
-  margin: 0;
-  padding: 0;
-  gap: 16px;
+  line-height: 0.8;
 }
 
 ul a:link {
   text-decoration: none;
 }
+
+
